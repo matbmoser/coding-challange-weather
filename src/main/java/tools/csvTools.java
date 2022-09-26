@@ -2,17 +2,12 @@ package tools;
 
 import com.opencsv.*;
 
-import java.io.FileReader;
-import java.io.FileWriter;
 import java.io.Reader;
-import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
-public class csvReader {
+public final class csvTools {
     public static List<String[]> readFile(Path filePath, Character separator) throws Exception {
         try (Reader reader = Files.newBufferedReader(filePath)) {
             CSVParser parser = new CSVParserBuilder()
