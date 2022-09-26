@@ -1,7 +1,7 @@
-package tools;
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import tools.csvTools;
+import tools.logTools;
 
 import java.nio.file.Path;
 import java.util.List;
@@ -11,7 +11,7 @@ public class csvToolsTest {
     private Path testCsvFile;
     @BeforeEach
     void setUp() {
-        testCsvFile = Path.of("./testFiles/weatherTest.csv");
+        testCsvFile = Path.of("../testFiles/weatherTest.csv");
     }
 
     @Test
