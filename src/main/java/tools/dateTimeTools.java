@@ -7,6 +7,11 @@ import java.util.Date;
 
 public class dateTimeTools {
 
+    /**
+     * Static tools to get current dateTime used for logging.
+     *
+     */
+
     public static String getDateTimeFormatted(String pattern){
         String defaultPattern = "dd/MM/yyyy HH:mm:ss";
         if(pattern == null){

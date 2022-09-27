@@ -1,2 +1,4 @@
 de\exxcellent\challenge\AppTest.class
+de\exxcellent\challenge\readers\WeatherReaderTest.class
+tools\logToolsTest.class
 tools\csvToolsTest.class

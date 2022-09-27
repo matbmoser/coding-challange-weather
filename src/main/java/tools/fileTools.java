@@ -7,6 +7,11 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 
 public final class fileTools {
+
+    /**
+     * Static Tools to manage files, and store in logs the logTools
+     *
+     */
     public static void toFile(String filePath, String content, Boolean append){
         try {
             FileWriter fw = new FileWriter(filePath,append);

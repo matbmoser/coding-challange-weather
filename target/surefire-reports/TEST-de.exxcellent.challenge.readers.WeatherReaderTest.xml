@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="tools.csvToolsTest" time="0.004" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="de.exxcellent.challenge.readers.WeatherReaderTest" time="0.126" tests="3" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="15"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -56,8 +56,13 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="59.0"/>
   </properties>
-  <testcase name="readTestFile" classname="tools.csvToolsTest" time="0.003">
-    <system-out><![CDATA[27/09/2022 15:23:11 CSV Read Test csvTools = [[[Day, MxT, MnT, AvT, AvDP, 1HrP TPcpn, PDir, AvSp, Dir, MxS, SkyC, MxR, Mn, R AvSLP], [1, 88, 59, 74, 53.8, 0, 280, 9.6, 270, 17, 1.6, 93, 23, 1004.5], [2, 79, 63, 71, 46.5, 0, 330, 8.7, 340, 23, 3.3, 70, 28, 1004.5], [3, 77, 55, 66, 39.6, 0, 350, 5, 350, 9, 2.8, 59, 24, 1016.8]]]
+  <testcase name="loadCsv" classname="de.exxcellent.challenge.readers.WeatherReaderTest" time="0.092">
+    <system-out><![CDATA[27/09/2022 15:23:11 TEST CSV FileContent -> [[[Day, MxT, MnT, AvT, AvDP, 1HrP TPcpn, PDir, AvSp, Dir, MxS, SkyC, MxR, Mn, R AvSLP], [1, 88, 59, 74, 53.8, 0, 280, 9.6, 270, 17, 1.6, 93, 23, 1004.5], [2, 79, 63, 71, 46.5, 0, 330, 8.7, 340, 23, 3.3, 70, 28, 1004.5], [3, 77, 55, 66, 39.6, 0, 350, 5, 350, 9, 2.8, 59, 24, 1016.8]]]
 ]]></system-out>
   </testcase>
+  <testcase name="getDictContent" classname="de.exxcellent.challenge.readers.WeatherReaderTest" time="0.004">
+    <system-out><![CDATA[27/09/2022 15:23:11 TEST CSV HashMap -> {1.0={Mn=23.0, SkyC=1.6, MxR=93.0, MxT=88.0, MxS=17.0, Dir=270.0, AvSp=9.6, R AvSLP=1004.5, MnT=59.0, PDir=280.0, Day=1.0, 1HrP TPcpn=0.0, AvT=74.0, AvDP=53.8}, 2.0={Mn=28.0, SkyC=3.3, MxR=70.0, MxT=79.0, MxS=23.0, Dir=340.0, AvSp=8.7, R AvSLP=1004.5, MnT=63.0, PDir=330.0, Day=2.0, 1HrP TPcpn=0.0, AvT=71.0, AvDP=46.5}, 3.0={Mn=24.0, SkyC=2.8, MxR=59.0, MxT=77.0, MxS=9.0, Dir=350.0, AvSp=5.0, R AvSLP=1016.8, MnT=55.0, PDir=350.0, Day=3.0, 1HrP TPcpn=0.0, AvT=66.0, AvDP=39.6}}
+]]></system-out>
+  </testcase>
+  <testcase name="getMinSpreadDayAndValue" classname="de.exxcellent.challenge.readers.WeatherReaderTest" time="0.002"/>
 </testsuite>
