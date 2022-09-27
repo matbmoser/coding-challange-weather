@@ -89,11 +89,12 @@ public class BaseReader {
         return this.dictContent;
     }
     /*
+     * Simple Greedy algorithm
      * getMinSpreadDayAndValue
-     * Get Mininum Temperature Spread Day and Value
-     *
-     * Spread Temperature is
-     * Returns array with (day, value) if successful.
+     * Get Mininum Value Spread for minLabel and maxLabel indicated
+     * absolute parame indicates if value is absolute.
+     * Spread Value is
+     * Returns array with (key, value) if successful.
      * if not returns null
      *
      */
