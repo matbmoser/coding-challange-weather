@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: de.exxcellent.challenge.readers.WeatherReaderTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.126 s - in de.exxcellent.challenge.readers.WeatherReaderTest

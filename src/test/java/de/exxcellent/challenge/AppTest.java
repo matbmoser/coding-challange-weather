@@ -11,21 +11,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  */
 class AppTest {
 
-    private String successLabel = "not successful";
 
-    @BeforeEach
-    void setUp() {
-        successLabel = "successful";
-    }
-
-    @Test
-    void aPointlessTest() {
-        assertEquals("successful", successLabel, "My expectations were not met");
-    }
-
-    @Test
-    void runFootball() {
-        App.main("--football", "football.csv");
-    }
 
 }

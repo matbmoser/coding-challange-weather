@@ -8,6 +8,13 @@ import java.nio.file.Path;
 import java.util.List;
 
 public final class csvTools {
+
+    /**
+     * Static tools to manage csv files.
+     * At the moment just readFile is available
+     * Uses OpenCSV library.
+     */
+
     public static List<String[]> readFile(Path filePath, Character separator) throws Exception {
         try (Reader reader = Files.newBufferedReader(filePath)) {
             CSVParser parser = new CSVParserBuilder()

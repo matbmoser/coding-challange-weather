@@ -1,0 +1,6 @@
+tools\csvTools.class
+tools\dateTimeTools.class
+de\exxcellent\challenge\readers\WeatherReader.class
+tools\logTools.class
+de\exxcellent\challenge\App.class
+tools\fileTools.class
