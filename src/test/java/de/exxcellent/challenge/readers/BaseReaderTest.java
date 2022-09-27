@@ -1,7 +1,6 @@
 package de.exxcellent.challenge.readers;
 
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import tools.logTools;
@@ -10,17 +9,15 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
-
-class WeatherReaderTest {
-    private WeatherReader weatherReader;
+class BaseReaderTest {
+    private BaseReader baseReader;
     private final String weatherCsvPath = "src/test/resources/de.exxcellent.challange/weatherTest.csv";
     List<String[]> csvContent;
 
     @BeforeEach
     void setUp(){
-        weatherReader = new WeatherReader();
-        csvContent = weatherReader.loadCsv(this.weatherCsvPath, ',');
+        baseReader = new BaseReader("Day");
+        csvContent = baseReader.loadCsv(this.weatherCsvPath, ',');
     }
 
     @Test
@@ -32,14 +29,19 @@ class WeatherReaderTest {
 
     @Test
     void getDictContent() {
-        HashMap<Float,HashMap<String, Float>> results = weatherReader.getDictContent();
+        HashMap<String,HashMap<String, String>> results = baseReader.getDictContent();
         logTools.printMessage("TEST CSV HashMap -> "+results.toString());
         Assertions.assertNotNull(results);
     }
 
     @Test
-    void getMinSpreadDayAndValue() {
-        List<Float> results = weatherReader.getMinSpreadDayAndValue();
+    void getMinDifferenceValue() {
+        List<String> results = baseReader.getMinDifferenceValue("MnT", "MxT", false);
+        Assertions.assertNotNull(results);
+    }
+    @Test
+    void getMinDifferenceValueAbsolute() {
+        List<String> results = baseReader.getMinDifferenceValue("MnT", "MxT", true);
         Assertions.assertNotNull(results);
     }
 }
