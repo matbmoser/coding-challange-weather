@@ -1,6 +1,10 @@
 package tools;
 
 public class numericTools {
+    /**
+     * Static Tools to parse numbers if is possible
+     *
+     */
 
     public static Integer parseInt(String value){
         try{

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="tools.logToolsTest" time="0.013" tests="4" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="de.exxcellent.challenge.AppTest" time="0.153" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="15"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -56,20 +56,11 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="59.0"/>
   </properties>
-  <testcase name="printException" classname="tools.logToolsTest" time="0.006">
-    <system-err><![CDATA[27/09/2022 18:02:16 [EXCEPTION] [null] This is an EXCEPTION test!
-]]></system-err>
-  </testcase>
-  <testcase name="printError" classname="tools.logToolsTest" time="0.001">
-    <system-err><![CDATA[27/09/2022 18:02:16 [ERROR] This is an ERROR test!
-]]></system-err>
-  </testcase>
-  <testcase name="printMessage" classname="tools.logToolsTest" time="0.002">
-    <system-out><![CDATA[27/09/2022 18:02:16 This is a test!
-]]></system-out>
-  </testcase>
-  <testcase name="printWarning" classname="tools.logToolsTest" time="0.001">
-    <system-out><![CDATA[27/09/2022 18:02:16 [WARNING] This is an WARNING test!
+  <testcase name="getCsvResults" classname="de.exxcellent.challenge.AppTest" time="0.12">
+    <system-out><![CDATA[27/09/2022 18:02:16 [INFO] Football CSV FileContent -> [[[Team, Games, Wins, Losses, Draws, Goals, Goals Allowed, Points], [Arsenal, 38, 26, 9, 3, 79, 36, 87], [Liverpool, 38, 24, 8, 6, 67, 30, 80], [Manchester United, 38, 24, 5, 9, 87, 45, 77], [Newcastle, 38, 21, 8, 9, 74, 52, 71], [Leeds, 38, 18, 12, 8, 53, 37, 66], [Chelsea, 38, 17, 13, 8, 66, 38, 64]]]
+27/09/2022 18:02:16 [INFO] Football CSV Dict -> {Liverpool={Points=80, Losses=8, Goals Allowed=30, Games=38, Team=Liverpool, Draws=6, Goals=67, Wins=24}, Leeds={Points=66, Losses=12, Goals Allowed=37, Games=38, Team=Leeds, Draws=8, Goals=53, Wins=18}, Arsenal={Points=87, Losses=9, Goals Allowed=36, Games=38, Team=Arsenal, Draws=3, Goals=79, Wins=26}, Chelsea={Points=64, Losses=13, Goals Allowed=38, Games=38, Team=Chelsea, Draws=8, Goals=66, Wins=17}, Manchester United={Points=77, Losses=5, Goals Allowed=45, Games=38, Team=Manchester United, Draws=9, Goals=87, Wins=24}, Newcastle={Points=71, Losses=8, Goals Allowed=52, Games=38, Team=Newcastle, Draws=9, Goals=74, Wins=21}}
+27/09/2022 18:02:16 TEST CSV FOOTBALL TEAM = [Leeds]
+27/09/2022 18:02:16 TEST CSV FOOTBALL ABSOLUTE DISTANCE = [16.0]
 ]]></system-out>
   </testcase>
 </testsuite>
